@@ -41,7 +41,29 @@
         <jmh.version>1.0</jmh.version>
         <javac.target>1.7</javac.target>
         <uberjar.name>benchmarks</uberjar.name>
+
+<!-- BEGIN VAST OVERRIDE -->
+      <!-- override these in your local settings.xml -->
+      <release.repo.id>UNDEFINED</release.repo.id>
+      <release.repo.url>UNDEFINED</release.repo.url>
+      <snapshot.repo.id>UNDEFINED</snapshot.repo.id>
+      <snapshot.repo.url>UNDEFINED</snapshot.repo.url>
+<!-- END VAST OVERRIDE -->
+
     </properties>
+
+<!-- BEGIN VAST OVERRIDE -->
+  <distributionManagement>
+      <repository>
+          <id>${release.repo.id}</id>
+          <url>${release.repo.url}</url>
+      </repository>
+      <snapshotRepository>
+          <id>${snapshot.repo.id}</id>
+          <url>${snapshot.repo.url}</url>
+      </snapshotRepository>
+  </distributionManagement>
+<!-- END VAST OVERRIDE -->
 
     <build>
         <plugins>
