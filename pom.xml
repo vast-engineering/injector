@@ -43,11 +43,11 @@
         <uberjar.name>benchmarks</uberjar.name>
 
 <!-- BEGIN VAST OVERRIDE -->
-      <!-- Expect 1.6 source and produce 1.6 binaries. -->
-      <maven.compiler.source>1.6</maven.compiler.source>
-      <maven.compiler.target>1.6</maven.compiler.target>
-      <maven.compiler.testSource>1.6</maven.compiler.testSource>
-      <maven.compiler.testTarget>1.6</maven.compiler.testTarget>
+      <!-- Expect 1.7 source and produce 1.7 binaries. -->
+      <maven.compiler.source>1.7</maven.compiler.source>
+      <maven.compiler.target>1.7</maven.compiler.target>
+      <maven.compiler.testSource>1.7</maven.compiler.testSource>
+      <maven.compiler.testTarget>1.7</maven.compiler.testTarget>
 
       <!-- override these in your local settings.xml -->
       <release.repo.id>UNDEFINED</release.repo.id>
